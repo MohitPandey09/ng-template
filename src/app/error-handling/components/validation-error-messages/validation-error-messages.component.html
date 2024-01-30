@@ -1,0 +1,16 @@
+<mat-card *ngIf="errors.length > 0">
+  <mat-card-header>
+    <mat-card-title>
+      <mat-icon class="material-icons-outlined">error</mat-icon>
+      To complete this form, Please provide the following...
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngFor="let error of errors">
+        <mat-icon class="material-icons-outlined">circle</mat-icon>
+        <p>{{ error }}</p>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

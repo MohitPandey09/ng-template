@@ -1,0 +1,6 @@
+<ng-content></ng-content>
+<div
+  class="d-block invalid-feedback"
+  *ngIf="control?.invalid && control?.touched && !skip"
+  [innerHTML]="errorMessage"
+></div>
